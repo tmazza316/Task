@@ -19,7 +19,7 @@ Please make sure to fork and clone this project before you begin. Once you have 
 
 ## View Hierarchy
 1. Create a UITableViewController file called `TaskListTableViewController`
-2. Add a UITableViewController scene to your `Main.storybaord` that will be used to list tasks. Class it as a `TaskListTableViewController`
+2. Add a UITableViewController scene to your `Main.storyboard` that will be used to list tasks. Class it as a `TaskListTableViewController`
 3. Embed the scene in a UINavigationController and set it as your apps initial entry point
 4. In your `TaskListTableViewController`, set your table view's prototype style to `basic` (_we will change this later to be a custom style_)
 5. Give your cell a reuseIdentifier of `taskCell`
@@ -60,7 +60,7 @@ Create a TaskController model object controller that will manage and serve Task 
 5. Create your 3 persistence methods, `fileURL`, `saveToPersistentStorage`, `loadFromPersistentStorage` 
 * _Hint: You may reference old projects or use a code snippet to do this. However, make sure to update the necessary code._
 * _Hint 2: You will need to make your model codable._
-6. Go through each CRUD function and build out the logic. Create should create a `Task` and append it to the `tasks` array. Update should update the passed in task with the new values that were passed in. ToggleIsComplete should simply flip the boolean status of a tasks `isComplete` property. Delete should first find the index of the given task (_Hint: You will need to implement equatable on your `Task` model for this to work_) and then remove the task at that index from the `tasks` array. Make sure to call your save funtion at the end of each CRUD function
+6. Go through each CRUD function and build out the logic. Create should create a `Task` and append it to the `tasks` array. Update should update the passed in task with the new values that were passed in. ToggleIsComplete should simply flip the boolean status of a tasks `isComplete` property. Delete should first find the index of the given task (_Hint: You will need to implement equatable on your `Task` model for this to work_) and then remove the task at that index from the `tasks` array. Make sure to call your save function at the end of each CRUD function
 * Step 6 might be tough. Use previous projects as a reference. If you are stuck for more than 20 minutes, reach out in the queue channel for support.
 
 ## TaskListTableViewController
@@ -130,4 +130,4 @@ In this next section, you will write a protocol for the `TaskTableViewCell` to d
 At this point you should be able to run your project and toggle tasks directly from the tasks list. Test your app. Make sure there are no bugs. Do not forget to test persistence. If you have any issues, spend 20 minutes debugging, and then send a message via the queue channel.
 
 # Copyright
-Copyright © 2020 Strayer University. Unauthorized use and/or duplication of this material without express and written permission from Strayer University is strictly prohibited. To see Devmountain's privacy policy, please vistit https://devmountain.com/privacy
+Copyright © 2020 Strayer University. Unauthorized use and/or duplication of this material without express and written permission from Strayer University is strictly prohibited. To see Devmountain's privacy policy, please visit https://devmountain.com/privacy
